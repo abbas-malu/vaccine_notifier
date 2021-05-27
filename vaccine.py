@@ -17,5 +17,5 @@ for i in range(1,10000):
     for i in data['sessions']:
         if i['available_capacity_dose1']>1:
             print(i['name'],i['available_capacity_dose1'])
-            push = pb.push_note('Dose Available',f'Center: {i['name']} \n Doses: {i['available_capacity_dose1']}')
+            push = pb.push_note('Dose Available',f'Center: {i["name"]} \n Doses: {i["available_capacity_dose1"]}')
     time.sleep(2)
